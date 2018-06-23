@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% block content %}
+<p class="padding-top">Please enter custom data</p>
+<form method="POST" action="{{url_for('update', id=item.id)}}">
+<h1>Name: {{item.name}}</h1><input type="text" name="value1"><br>
+<h3>Calories: {{item.calories}}</h3><input type="text"  name="value2"><br>
+<h3>Calories from Fat: {{item.fat_cals}}</h3><input type="text"name="value3"><br>
+<h3>Total Fat: {{item.total_fat}}</h3><input type="text"name="value4"><br>
+<h3>Saturated Fat: {{item.saturated_fat}}</h3><input type="text"name="value5"><br>
+<h3>Trans Fat: {{item.trans_fat}}</h3><input type="text"name="value6"><br>
+<h3>Cholesterol: {{item.cholesterol}}</h3><input type="text"name="value7"><br>
+<h3>Sodium: {{item.sodium}}</h3><input type="text"name="value8"><br>
+<h3>Carbohydrates: {{item.carbohydrates}}</h3><input type="text"name="value9"><br>
+<h3>Dietary Fiber: {{item.dietary_fiber}}</h3><input type="text"name="value10"><br>
+<h3>Sugars: {{item.sugars}}</h3><input type="text"name="value11"><br>
+<h3>Protein: {{item.protein}}</h3><input type="text"name="value12"><br>
+<h3>Vitamin A: {{item.vitamin_a}}</h3><input type="text"name="value13"><br>
+<h3>Vitamin C: {{item.vitamin_c}}</h3><input type="text"name="value14"><br>
+<h3>Calcium: {{item.calcium}}</h3><input type="text"name="value15"><br>
+<h3>Iron: {{item.iron}}</h3><input type="text"name="value16"><br>
+<input type="submit">
+</form>
+{% endblock %} 
